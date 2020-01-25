@@ -1,14 +1,14 @@
 # Automating Fedora Core OS Bare Metal Installation
 
-This adds `installation.service` an automated installation unit to the FCOS ISO file found on the USB Key
+Clone `ign-embed` to the directory in which an FCOS ISO file resides. `make embed` adds `installation.service` an automated installation unit to the FCOS ISO file.
 
-(login as core/fcos)
+(Also enables login as core/fcos)
 
 ```
 # Transpile installer.yaml to installer.json 
-make 
+make
 
-# Embed installer.json in ISO file in parent directory
+# Embed installer.json to the ISO file in parent directory
 make embed
 ```
 
